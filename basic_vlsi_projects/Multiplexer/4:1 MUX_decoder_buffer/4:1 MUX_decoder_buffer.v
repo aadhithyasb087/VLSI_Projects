@@ -1,46 +1,35 @@
-// Testbench for 4:1 Multiplexer (mux_4_1_dec_buf)
-module mux_4_1_dec_buf_tb;
+module tribuf(input in,input cntrl,output y);
 
-	// Inputs (registers to store test values)
-	reg [3:0] in;   // 4-bit input data
-	reg [1:0] sel;  // 2-bit selection signal
+    bufif1 BUF(y,in,cntrl);
 
-	// Output (wire to capture the output of the UUT)
-	wire y; 
-
-	// Instantiate the Unit Under Test (UUT)
-	mux_4_1_dec_buf uut (
-		.in(in),  // Connect testbench 'in' to UUT 'in'
-		.sel(sel), // Connect testbench 'sel' to UUT 'sel'
-		.y(y)     // Connect UUT output 'y' to testbench 'y'
-	);
-
-	// Initial block to initialize inputs
-	initial 
-	begin
-		// Set initial values (though overwritten in the next block)
-		in = 4'b0000;
-		sel = 2'b00;
-	end		
-
-	// Test cases to verify multiplexer functionality
-	initial 
-	begin
-        // Apply different input and selection values and wait 10 time units each
-        in = 4'b1000; sel = 2'b00; #10;
-        $display("in = %b, sel = %b, y = %b", in, sel, y); // Display result
-
-        in = 4'b1000; sel = 2'b01; #10;
-        $display("in = %b, sel = %b, y = %b", in, sel, y);
-
-        in = 4'b1000; sel = 2'b10; #10;
-        $display("in = %b, sel = %b, y = %b", in, sel, y);
-
-        in = 4'b1000; sel = 2'b11; #10;
-        $display("in = %b, sel = %b, y = %b", in, sel, y);
-
-        $finish; // End simulation
-    end
-      
 endmodule
 
+module mux_4_1_dec_buf(
+    input [3:0] in,
+    input [1:0] sel,
+    output wor y
+    );
+    wire [3:0] w;        // Decoder outputs (one-hot encoded)
+   // wire [3:0] buf_out;  // Outputs from tri-state buffers
+
+    // Instantiate 2:4 Decoder
+    decoder_2_4 dec(
+        .a(sel[1]),
+        .b(sel[0]),
+        .en(1'b1),       // Enable always ON
+        .y3(w[3]),
+        .y2(w[2]),
+        .y1(w[1]),
+        .y0(w[0])
+    );
+
+    // Instantiate tri-state buffers
+    tribuf b0(.in(in[3]), .cntrl(w[3]), .y(y));
+    tribuf b1(.in(in[2]), .cntrl(w[2]), .y(y));
+    tribuf b2(.in(in[1]), .cntrl(w[1]), .y(y));
+    tribuf b3(.in(in[0]), .cntrl(w[0]), .y(y));
+
+    // Combine the outputs of the buffers (only one will drive `y`)
+ //  assign y = (w[0] ? buf_out[0] : (w[1] ? buf_out[1] : (w[2] ? buf_out[2] : buf_out[3])));
+
+endmodule
