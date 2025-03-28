@@ -1,3 +1,9 @@
+/*
+Description:
+4:1 Multiplexer using a 2:4 Decoder and Tri-State Buffers
+This project implements a 4:1 multiplexer (MUX) using a 2:4 decoder and tri-state buffers. The multiplexer selects one of four input signals (in[3:0]) based on a 2-bit select signal (sel[1:0]).
+*/
+
 // Tri-State Buffer Module
 module tribuf(input in, input cntrl, output y);
     // Tri-state buffer: passes `in` to `y` when `cntrl` is high (1), otherwise outputs high impedance (Z)
@@ -31,20 +37,3 @@ module mux_4_1_dec_buf(
     tribuf b3(.in(in[0]), .cntrl(w[0]), .y(y));
 
 endmodule
-
-/* Description:
-4:1 Multiplexer using a 2:4 Decoder and Tri-State Buffers
-This project implements a 4:1 multiplexer (MUX) using a 2:4 decoder and tri-state buffers. The multiplexer selects one of four input signals (in[3:0]) based on a 2-bit select signal (sel[1:0]).
-
-Working Principle:
-2:4 Decoder (decoder_2_4):
-
-Takes the 2-bit select signal (sel[1:0]) and generates a one-hot output (w[3:0]).
-
-The one-hot encoding means that only one of w[3], w[2], w[1], or w[0] is active (1), while the others remain 0.
-
-Tri-State Buffers (tribuf):
-
-Each buffer receives one input bit (in[3:0]) and is enabled by the corresponding decoder output (w[3:0]).
-
-Since only one w[i] is active at a time, only one buffer drives the output y, while the rest remain in a high-impedance (Z) state. */
