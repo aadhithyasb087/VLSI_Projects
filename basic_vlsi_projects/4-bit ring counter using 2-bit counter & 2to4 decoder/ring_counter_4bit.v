@@ -9,7 +9,7 @@ module counter_2bit (
         if (~clearn) begin
             count <= 2'b00; // clear to 0
         end else if (~presetn) begin
-            count <= 2'b00; // Preset
+            count <= 2'b11; // Preset
         end else begin
             count <= count + 1; // Increment counter
         end
