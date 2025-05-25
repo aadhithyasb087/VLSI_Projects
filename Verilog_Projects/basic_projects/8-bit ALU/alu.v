@@ -39,7 +39,7 @@ module alu (
                 XNOR  : res = ~(a ^ b);
                 SLL   : res = a << b;
                 SRL   : res = a >> b;
-                DIV   : res = (b != 0) ? a / b : 16'hFFFF;  // Prevent divide by zero
+                DIV   : res = (b != 0) ? a / b : 16'hx;  // Prevent divide by zero
                 INC   : res = a + 1;
                 DEC   : res = a - 1;
                 MUL   : res = a * b;
