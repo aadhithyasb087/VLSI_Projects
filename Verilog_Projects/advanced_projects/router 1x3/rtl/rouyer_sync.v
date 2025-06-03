@@ -43,7 +43,7 @@ module router_sync( detect_add,write_enb_reg,clock,resetn,read_enb_0,read_enb_1,
           count0<=count0+5'b1;          soft_reset_0<=1'b0;
         end      end
        else
-        count0=5'b0;         end
+        count0<=5'b0;         end
     else      count0<=5'b0;
     end
 
@@ -62,7 +62,7 @@ module router_sync( detect_add,write_enb_reg,clock,resetn,read_enb_0,read_enb_1,
         end    
 end
                 else   
-	 		count1=5'b0;
+	 		count1<=5'b0;
          end  
        	 else
       count1<=5'b0; 
@@ -76,7 +76,7 @@ if(!read_enb_2)begin        if(count2==5'd29)begin
         end        else begin
           count2<=count2+5'b1;          soft_reset_2<=1'b0;
         end      end
-                else                  count2=5'b0;
+                else                  count2<=5'b0;
          end    else
       count2<=5'b0;    end
 
