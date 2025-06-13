@@ -1,0 +1,22 @@
+package axi_pkg;
+  import uvm_pkg::*;
+  `include "uvm_macros.svh"
+  `include "axi_xtn.sv"
+  `include "mas_agt_cfg.sv"
+  `include "slv_agt_cfg.sv"
+  `include "axi_env_cfg.sv"
+  `include "mas_drv.sv"
+  `include "mas_mon.sv"
+  `include "mas_seqr.sv"
+  `include "slv_drv.sv"
+  `include "slv_mon.sv"
+  `include "slv_seqr.sv"
+  `include "mas_agt.sv"
+  `include "slv_agt.sv"
+  `include "mas_agt_top.sv"
+  `include "slv_agt_top.sv"
+  `include "axi_scoreboard.sv"
+  `include "axi_env.sv"
+  `include "axi_seq_lib.sv"
+  `include "axi_testlib.sv"
+endpackage
