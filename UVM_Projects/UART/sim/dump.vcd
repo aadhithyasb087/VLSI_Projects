@@ -1,0 +1,27 @@
+$date
+	Fri Jun 13 10:44:35 2025
+$end
+
+$version
+	Synopsys VCS version T-2022.06-SP1_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 41be13579bfe456b $end
+
+
+$scope module uart_tb_top $end
+
+$scope begin unnamed$$_vcs_3 $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+$end
