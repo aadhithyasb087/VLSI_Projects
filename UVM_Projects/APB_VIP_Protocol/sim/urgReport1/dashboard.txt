@@ -1,0 +1,21 @@
+Dashboard
+
+Date: Fri Aug 29 23:43:29 2025
+
+User: ADithYa
+
+Version: T-2022.06-SP1
+Command line: urg -dir mem_cov1.vdb -format both -report urgReport1
+Number of tests: 1
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  GROUP  
+ 80.00  80.00 
+
+
+-------------------------------------------------------------------------------
+Total Groups Coverage Summary 
+SCORE  INST SCORE WEIGHT 
+ 80.00  80.00     1      
+

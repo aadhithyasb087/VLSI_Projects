@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Group :: apb_pkg::apb_scoreboard::c1</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Group : apb_pkg::apb_scoreboard::c1</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | hierarchy | modlist | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Group : <a href="#"  onclick="showContent('apb_pkg::apb_scoreboard::c1')">apb_pkg::apb_scoreboard::c1</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td><b>SCORE</b></td><td>INSTANCES</td><td>WEIGHT</td><td>GOAL</td><td>AT LEAST</td><td>PER INSTANCE</td><td>AUTO BIN MAX</td><td>PRINT MISSING</td></tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">100   </td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">64    </td>
+<td class="wht cl rt">64    </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home1/BPRN16/ADithYa/personal_projects/APB_Protocol/sim/../tb/apb_scoreboard.sv')">/home1/BPRN16/ADithYa/personal_projects/APB_Protocol/sim/../tb/apb_scoreboard.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>1 Instances:</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td><b>SCORE</b></td><td>WEIGHT</td><td>GOAL</td><td>AT LEAST</td><td>AUTO BIN MAX</td><td>PRINT MISSING</td></tr><tr>
+<td class="wht cl wordwrap"><a href="grp0.html#inst_tag_top.me.obj.c1"  onclick="showContent('top.me.obj.c1')">top.me.obj.c1</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">100   </td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">64    </td>
+<td class="wht cl rt">64    </td>
+</tr></table><br clear=all>
+<br clear=all>
+</div>
+<hr>
+<br clear=all>
+<span class=repname>Summary for Group   apb_pkg::apb_scoreboard::c1
+</span>
+<br clear=all>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td><a href="#var_tbl_apb_pkg::apb_scoreboard::c1" >Variables</a></td>
+<td class="rt">7</td>
+<td class="rt">7</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td><a href="#crs_tbl_apb_pkg::apb_scoreboard::c1" >Crosses</a></td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class="repname" id="var_tbl_apb_pkg::apb_scoreboard::c1">Variables for Group  apb_pkg::apb_scoreboard::c1
+</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">VARIABLE</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td><td>GOAL</td><td>WEIGHT</td><td>AT LEAST</td><td>AUTO BIN MAX</td><td>COMMENT</td></tr><tr class="s0">
+<td><a href="#inst_tag_apb_pkg::apb_scoreboard::c1.ADDR"  onclick="checkLink(this)" target="detailFrame">ADDR</a></td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s0">
+<td><a href="#inst_tag_apb_pkg::apb_scoreboard::c1.PWDATA"  onclick="checkLink(this)" target="detailFrame">PWDATA</a></td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s0">
+<td><a href="#inst_tag_apb_pkg::apb_scoreboard::c1.PRDATA"  onclick="checkLink(this)" target="detailFrame">PRDATA</a></td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s0">
+<td><a href="#inst_tag_apb_pkg::apb_scoreboard::c1.WRITE"  onclick="checkLink(this)" target="detailFrame">WRITE</a></td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">2</td>
+<td></td>
+</tr><tr class="s0">
+<td><a href="#inst_tag_apb_pkg::apb_scoreboard::c1.ENABLE"  onclick="checkLink(this)" target="detailFrame">ENABLE</a></td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">2</td>
+<td></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class="repname" id="crs_tbl_apb_pkg::apb_scoreboard::c1">Crosses for Group  apb_pkg::apb_scoreboard::c1
+</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CROSS</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td><td>GOAL</td><td>WEIGHT</td><td>AT LEAST</td><td>PRINT MISSING</td><td>COMMENT</td></tr><tr class="s0">
+<td><a href="#inst_tag_apb_pkg::apb_scoreboard::c1.AXB"  onclick="checkLink(this)" target="detailFrame">AXB</a></td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr></table><br clear=all>
+</div>
+<div name='top.me.obj.c1'>
+<a name="inst_tag_top.me.obj.c1"></a>
+<hr>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Group Instance : <a href="groups.html#tag_top.me.obj.c1" >top.me.obj.c1</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td><b>SCORE</b></td><td>WEIGHT</td><td>GOAL</td><td>AT LEAST</td><td>AUTO BIN MAX</td><td>PRINT MISSING</td></tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">100   </td>
+<td class="wht cl rt">1     </td>
+<td class="wht cl rt">64    </td>
+<td class="wht cl rt">64    </td>
+</tr></table><br clear=all>
+<br clear=all>
+</div>
+<hr>
+<br clear=all>
+<span class=repname>Summary for Group Instance   top.me.obj.c1
+</span>
+<br clear=all>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td><a href="#var_tbl_top.me.obj.c1" >Variables</a></td>
+<td class="rt">7</td>
+<td class="rt">7</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td><a href="#crs_tbl_top.me.obj.c1" >Crosses</a></td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class="repname" id="var_tbl_top.me.obj.c1">Variables for Group Instance  top.me.obj.c1
+</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">VARIABLE</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td><td>GOAL</td><td>WEIGHT</td><td>AT LEAST</td><td>AUTO BIN MAX</td><td>COMMENT</td></tr><tr class="s0">
+<td><a href="#inst_tag_top.me.obj.c1.ADDR"  onclick="checkLink(this)" target="detailFrame">ADDR</a></td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s0">
+<td><a href="#inst_tag_top.me.obj.c1.PWDATA"  onclick="checkLink(this)" target="detailFrame">PWDATA</a></td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s0">
+<td><a href="#inst_tag_top.me.obj.c1.PRDATA"  onclick="checkLink(this)" target="detailFrame">PRDATA</a></td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr><tr class="s0">
+<td><a href="#inst_tag_top.me.obj.c1.WRITE"  onclick="checkLink(this)" target="detailFrame">WRITE</a></td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">2</td>
+<td></td>
+</tr><tr class="s0">
+<td><a href="#inst_tag_top.me.obj.c1.ENABLE"  onclick="checkLink(this)" target="detailFrame">ENABLE</a></td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">2</td>
+<td></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class="repname" id="crs_tbl_top.me.obj.c1">Crosses for Group Instance  top.me.obj.c1
+</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CROSS</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td><td>GOAL</td><td>WEIGHT</td><td>AT LEAST</td><td>PRINT MISSING</td><td>COMMENT</td></tr><tr class="s0">
+<td><a href="#inst_tag_top.me.obj.c1.AXB"  onclick="checkLink(this)" target="detailFrame">AXB</a></td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">100</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td></td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='apb_pkg::apb_scoreboard::c1'>
+<br clear=all>
+<a name="inst_tag_apb_pkg::apb_scoreboard::c1.ADDR"></a><span class="repname" id="inst_tag_apb_pkg::apb_scoreboard::c1.ADDR">Summary for Variable ADDR</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td>User Defined Bins</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for ADDR</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td>addr_range</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_apb_pkg::apb_scoreboard::c1.PWDATA"></a><span class="repname" id="inst_tag_apb_pkg::apb_scoreboard::c1.PWDATA">Summary for Variable PWDATA</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td>User Defined Bins</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for PWDATA</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td>pw_range</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_apb_pkg::apb_scoreboard::c1.PRDATA"></a><span class="repname" id="inst_tag_apb_pkg::apb_scoreboard::c1.PRDATA">Summary for Variable PRDATA</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td>User Defined Bins</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for PRDATA</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td>pr_range</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_apb_pkg::apb_scoreboard::c1.WRITE"></a><span class="repname" id="inst_tag_apb_pkg::apb_scoreboard::c1.WRITE">Summary for Variable WRITE</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td>Automatically Generated Bins</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Automatically Generated Bins for WRITE</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td nowrap>[auto[0] - auto[1]]</td>
+<td align=center nowrap>--</td>
+<td align=center nowrap>--</td>
+<td class="rt">2</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_apb_pkg::apb_scoreboard::c1.ENABLE"></a><span class="repname" id="inst_tag_apb_pkg::apb_scoreboard::c1.ENABLE">Summary for Variable ENABLE</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td>Automatically Generated Bins</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Automatically Generated Bins for ENABLE</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td nowrap>[auto[0] - auto[1]]</td>
+<td align=center nowrap>--</td>
+<td align=center nowrap>--</td>
+<td class="rt">2</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_apb_pkg::apb_scoreboard::c1.AXB"></a><span class="repname" id="inst_tag_apb_pkg::apb_scoreboard::c1.AXB">Summary for Cross AXB</span>
+<br clear=all>
+<br clear=all>
+Samples crossed: ADDR WRITE<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td><td>MISSING</td></tr><tr class="s0">
+<td>Automatically Generated Cross Bins</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">2</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Automatically Generated Cross Bins for AXB</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td nowrap width=40 class="alfsrt">ADDR</td><td nowrap width=40 class="alfsrt">WRITE</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td align=center>*</td>
+<td align=center>*</td>
+<td align=center nowrap>--</td>
+<td align=center nowrap>--</td>
+<td class="rt">2</td>
+</tr></table><br clear=all>
+</div>
+<div name='top.me.obj.c1'>
+<br clear=all>
+<a name="inst_tag_top.me.obj.c1.ADDR"></a><span class="repname" id="inst_tag_top.me.obj.c1.ADDR">Summary for Variable ADDR</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td>User Defined Bins</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for ADDR</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td>addr_range</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_top.me.obj.c1.PWDATA"></a><span class="repname" id="inst_tag_top.me.obj.c1.PWDATA">Summary for Variable PWDATA</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td>User Defined Bins</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for PWDATA</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td>pw_range</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_top.me.obj.c1.PRDATA"></a><span class="repname" id="inst_tag_top.me.obj.c1.PRDATA">Summary for Variable PRDATA</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td>User Defined Bins</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>User Defined Bins for PRDATA</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td>pr_range</td>
+<td class="rt">0</td>
+<td class="rt">1</td>
+<td class="rt">1</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_top.me.obj.c1.WRITE"></a><span class="repname" id="inst_tag_top.me.obj.c1.WRITE">Summary for Variable WRITE</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td>Automatically Generated Bins</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Automatically Generated Bins for WRITE</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td nowrap>[auto[0] - auto[1]]</td>
+<td align=center nowrap>--</td>
+<td align=center nowrap>--</td>
+<td class="rt">2</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_top.me.obj.c1.ENABLE"></a><span class="repname" id="inst_tag_top.me.obj.c1.ENABLE">Summary for Variable ENABLE</span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td></tr><tr class="s0">
+<td>Automatically Generated Bins</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Automatically Generated Bins for ENABLE</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td nowrap>[auto[0] - auto[1]]</td>
+<td align=center nowrap>--</td>
+<td align=center nowrap>--</td>
+<td class="rt">2</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="inst_tag_top.me.obj.c1.AXB"></a><span class="repname" id="inst_tag_top.me.obj.c1.AXB">Summary for Cross AXB</span>
+<br clear=all>
+<br clear=all>
+Samples crossed: ADDR WRITE<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">CATEGORY</td><td>EXPECTED</td><td>UNCOVERED</td><td>COVERED</td><td>PERCENT</td><td>MISSING</td></tr><tr class="s0">
+<td>Automatically Generated Cross Bins</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+<td class="rt">2</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Automatically Generated Cross Bins for AXB</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Uncovered bins</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td nowrap width=40 class="alfsrt">ADDR</td><td nowrap width=40 class="alfsrt">WRITE</td><td>COUNT</td><td>AT LEAST</td><td>NUMBER</td></tr><tr class="s3">
+<td align=center>*</td>
+<td align=center>*</td>
+<td align=center nowrap>--</td>
+<td align=center nowrap>--</td>
+<td class="rt">2</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="apb_pkg::apb_scoreboard::c1">
+    <li>
+      <a href="#inst_tag_apb_pkg::apb_scoreboard::c1.ADDR">Variable : ADDR</a>    </li>
+    <li>
+      <a href="#inst_tag_apb_pkg::apb_scoreboard::c1.PWDATA">Variable : PWDATA</a>    </li>
+    <li>
+      <a href="#inst_tag_apb_pkg::apb_scoreboard::c1.PRDATA">Variable : PRDATA</a>    </li>
+    <li>
+      <a href="#inst_tag_apb_pkg::apb_scoreboard::c1.WRITE">Variable : WRITE</a>    </li>
+    <li>
+      <a href="#inst_tag_apb_pkg::apb_scoreboard::c1.ENABLE">Variable : ENABLE</a>    </li>
+    <li>
+      <a href="#inst_tag_apb_pkg::apb_scoreboard::c1.AXB">Cross : AXB</a>    </li>
+  </ul>
+  <ul name="top.me.obj.c1">
+    <li>
+      <a href="#inst_tag_top.me.obj.c1.ADDR">Variable : ADDR</a>    </li>
+    <li>
+      <a href="#inst_tag_top.me.obj.c1.PWDATA">Variable : PWDATA</a>    </li>
+    <li>
+      <a href="#inst_tag_top.me.obj.c1.PRDATA">Variable : PRDATA</a>    </li>
+    <li>
+      <a href="#inst_tag_top.me.obj.c1.WRITE">Variable : WRITE</a>    </li>
+    <li>
+      <a href="#inst_tag_top.me.obj.c1.ENABLE">Variable : ENABLE</a>    </li>
+    <li>
+      <a href="#inst_tag_top.me.obj.c1.AXB">Cross : AXB</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

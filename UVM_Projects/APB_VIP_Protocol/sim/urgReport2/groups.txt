@@ -1,0 +1,12 @@
+Testbench Group List
+
+Total Groups Coverage Summary 
+SCORE  INST SCORE WEIGHT 
+ 75.00  75.00     1      
+
+
+Total groups in report: 1
+-------------------------------------------------------------------------------
+SCORE  INSTANCES WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                        
+ 75.00  75.00    1      100    1        1            64           64                    apb_pkg::apb_scoreboard::c1 
+
