@@ -1,1 +1,1 @@
-apb_ram_protocol code: https://edaplayground.com/x/Nimd
+apb_ram_protocol eda playground code link: https://edaplayground.com/x/Nimd
