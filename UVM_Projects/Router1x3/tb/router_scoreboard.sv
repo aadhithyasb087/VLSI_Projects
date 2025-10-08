@@ -97,7 +97,7 @@ function bit router_scoreboard::data_check();
   end
 
   if(h_ip_pkt.size()==0)begin
-    `uvm_error(get_type_name(),"extra data from DUT")     
+    `uvm_error(get_type_name(),"no data from DUT")     
     return 0;
   end
   else begin
