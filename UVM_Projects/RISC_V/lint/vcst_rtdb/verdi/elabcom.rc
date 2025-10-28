@@ -1,0 +1,5 @@
+@verdi rc file Version 1.0
+[turbo_library]
+
+TurboLibs =   
+TurboLibPaths = ./

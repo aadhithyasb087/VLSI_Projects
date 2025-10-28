@@ -1,0 +1,187 @@
+##This file is genrated to have command line decompiled Info even in Console
+##(To generate SIGN_OFF report having command line decompiled)
+Run Setup Info
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Option          Value             Origin  File                           LineNo
+===============================================================================
++incdir         ./                CmdLine -                              -
+--disable_internal_waivers_gen <ON>              CmdLine -                              -
+--disable_sgom_db <ON>              CmdLine -                              -
+--goal_info     VC_GOAL0@         CmdLine -                              -
+--perflog       <ON>              CmdLine -                              -
+--strict_sgdc_check <ON>              Config  $SPYGLASS_HOME/.spyglass.setup 40
+-64bit          <ON>              CmdLine -                              -
+-allow_celldefine_as_top <ON>              CmdLine -                              -
+-allow_module_override <ON>              CmdLine -                              -
+-allow_non_lrm  <ON>              CmdLine -                              -
+-batch          <ON>              CmdLine -                              -
+-check_celldefine <ON>              CmdLine -                              -
+-disable_html_report html              CmdLine -                              -
+                datasheet         CmdLine -                              -
+                dashboard         CmdLine -                              -
+-enable_detailed_hierarchy <ON>              CmdLine -                              -
+-enable_generate_label_naming <ON>              CmdLine -                              -
+-existing_vir_dump_path /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/.internal/design/ CmdLine -                              -
+-ignore_pgpin   true              CmdLine -                              -
+-inferblackbox  <ON>              Config  $SPYGLASS_HOME/.spyglass.setup 30
+-lib            dware=>/home/cad/eda/SYNOPSYS/VC_SPYGLASS_2022/vc_static/T-2022.06/packages/DW/linux64/packages/dware/lib CmdLine -                              -
+                gtech=>/home/cad/eda/SYNOPSYS/VC_SPYGLASS_2022/vc_static/T-2022.06/packages/DW/linux64/packages/dw/gtech/lib CmdLine -                              -
+                dw01=>/home/cad/eda/SYNOPSYS/VC_SPYGLASS_2022/vc_static/T-2022.06/packages/DW/linux64/packages/dw/dw01/lib CmdLine -                              -
+                dw02=>/home/cad/eda/SYNOPSYS/VC_SPYGLASS_2022/vc_static/T-2022.06/packages/DW/linux64/packages/dw/dw02/lib CmdLine -                              -
+                dw03=>/home/cad/eda/SYNOPSYS/VC_SPYGLASS_2022/vc_static/T-2022.06/packages/DW/linux64/packages/dw/dw03/lib CmdLine -                              -
+                dw04=>/home/cad/eda/SYNOPSYS/VC_SPYGLASS_2022/vc_static/T-2022.06/packages/DW/linux64/packages/dw/dw04/lib CmdLine -                              -
+                dw05=>/home/cad/eda/SYNOPSYS/VC_SPYGLASS_2022/vc_static/T-2022.06/packages/DW/linux64/packages/dw/dw05/lib CmdLine -                              -
+                dw06=>/home/cad/eda/SYNOPSYS/VC_SPYGLASS_2022/vc_static/T-2022.06/packages/DW/linux64/packages/dw/dw06/lib CmdLine -                              -
+                WORK=>/home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/vc_lint0/msrv32_decoder/WORK CmdLine -                              -
+                SYNOPSYS=>$SPYGLASS_HOME/vhdl_libs/Linux4/SYNOPSYS Config  $SPYGLASS_HOME/.spyglass.setup 25
+-nl             <ON>              CmdLine -                              -
+-noreport       <ON>              CmdLine -                              -
+-policy         lint              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 75
+                morelint          CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 75
+                simulation        CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 75
+                starc2005         CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 75
+-prefer_tech_lib <ON>              CmdLine -                              -
+-projectwdir    /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/vc_lint0 CmdLine -                              -
+-rules          STARC05-2.10.1.4b CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 2
+                STARC05-2.10.1.4a CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 3
+                STARC05-2.3.1.2c  CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 4
+                STARC05-2.1.3.1   CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 5
+                STARC05-2.1.6.5   CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 6
+                STARC05-2.11.3.1  CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 7
+                STARC05-2.3.3.1   CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 8
+                STARC05-2.10.3.2a CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 9
+                STARC05-2.10.2.3  CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 10
+                STARC05-2.3.1.6   CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 11
+                STARC05-2.3.1.5b  CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 12
+                STARC05-2.2.3.3   CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 13
+                STARC05-2.1.5.3   CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 14
+                STARC05-2.1.4.5   CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 15
+                sim_race02        CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 16
+                NoXInCase-ML      CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 17
+                ParamWidthMismatch-ML CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 18
+                NoAssignX-ML      CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 19
+                PragmaComments-ML CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 20
+                ReportPortInfo-ML CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 21
+                W528              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 22
+                W505              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 23
+                W467              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 24
+                W424              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 25
+                W421              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 26
+                W398              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 27
+                W293              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 28
+                W287b             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 29
+                W287a             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 30
+                W240              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 31
+                W71               CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 32
+                W110a             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 33
+                mixedsenselist    CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 34
+                W416              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 35
+                W292              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 36
+                W156              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 37
+                W123              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 38
+                W122              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 39
+                W116              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 40
+                W422              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 41
+                W502              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 42
+                W499              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 43
+                W486              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 44
+                W481b             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 45
+                W481a             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 46
+                W480              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 47
+                W426              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 48
+                W415a             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 49
+                W362              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 50
+                W352              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 51
+                W337              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 52
+                W317              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 53
+                W289              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 54
+                W263              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 55
+                W224              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 56
+                W218              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 57
+                W216              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 58
+                W215              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 59
+                W66               CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 60
+                W19               CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 61
+                W496b             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 62
+                W496a             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 63
+                W110              CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 64
+                bothedges         CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 65
+                badimplicitSM4    CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 66
+                badimplicitSM2    CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 67
+                badimplicitSM1    CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 68
+                W442f             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 69
+                W442c             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 70
+                W442b             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 71
+                W442a             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 72
+                W339a             CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 73
+-run_pre_synth_rules_only <ON>              CmdLine -                              -
+-sortmethod     du                Config  $SPYGLASS_HOME/.spyglass.setup 27
+-suppress_verilog_rules W505,W467,W424,W293,W422,W481b,W481a,W426,W289,W218,W216,W215,W66,bothedges,badimplicitSM4,badimplicitSM2,badimplicitSM1,W442f,W442c,W442b,W442a CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 74
+-template       VC_GOAL0          CmdLine -                              -
+-templatedir    /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass CmdLine -                              -
+-top            msrv32_decoder    CmdLine -                              -
+-use_vcs_compile <ON>              CmdLine -                              -
+-wdir           /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/vc_lint0/msrv32_decoder/VC_GOAL0 CmdLine -                              -
+
+
+Rules Parameter
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+Parameter       Origin  File                           LineNo
+===============================================================================
+-check_static_value CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 77
+VALUE -- no
+(KNOWN_PARAM)
+-checkfullbus   CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 78
+VALUE -- W240,W528
+(KNOWN_PARAM)
+-checkfullrecord CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 79
+VALUE -- W123,W240,W528
+(KNOWN_PARAM)
+-checkfullstruct CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 80
+VALUE -- no
+(KNOWN_PARAM)
+-disable_rtl_deadcode CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 81
+VALUE -- no
+(KNOWN_PARAM)
+-filter_mark_open CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 82
+VALUE -- no
+(KNOWN_PARAM)
+-handle_shift_op CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 83
+VALUE -- no
+(KNOWN_PARAM)
+-ignoreModuleInstance CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 76
+VALUE -- yes
+(KNOWN_PARAM)
+-no_strict      CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 84
+VALUE -- no
+(KNOWN_PARAM)
+-nocheckoverflow CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 85
+VALUE -- STARC05-2.1.3.1,STARC05-2.10.3.2a,W110,W116,W263,W362,W416,W486
+(KNOWN_PARAM)
+-report_only_from_one_hierarchy CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 86
+VALUE -- no
+(KNOWN_PARAM)
+-strict         CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 87
+VALUE -- no
+(KNOWN_PARAM)
+-use_lrm_width  CmdFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/spyglass/VC_GOAL0.spq 88
+VALUE -- no
+(KNOWN_PARAM)
+
+
+Policy Info
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===============================================================================
+NameOfPolicy    VersionNumber   Path (from where policy loaded)
+===============================================================================
+spyglass        SpyGlass_vT-2022.06 $SPYGLASS_HOME/policies/spyglass
+lint            SpyGlass_vT-2022.06 $SPYGLASS_HOME/policies/lint
+morelint        SpyGlass_vT-2022.06 $SPYGLASS_HOME/policies/morelint
+simulation      SpyGlass_vT-2022.06 $SPYGLASS_HOME/policies/simulation
+starc2005       SpyGlass_vT-2022.06 $SPYGLASS_HOME/policies/starc2005
+starc           SpyGlass_vT-2022.06 $SPYGLASS_HOME/policies/starc
+starc2002       SpyGlass_vT-2022.06 $SPYGLASS_HOME/policies/starc2002
+
+

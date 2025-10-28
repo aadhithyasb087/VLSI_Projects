@@ -1,0 +1,3 @@
+Command Line: /home/cad/eda/SYNOPSYS/VC_SPYGLASS_2022/vc_static/T-2022.06/vcs-mx/linux64/bin/elabcom -simflow -KDBRESOLVER -simvdaidir /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/.internal/design/msrv32_decoder.exe.daidir -logdir /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/verdi/elabcomLog -ssy -ssv -ssz -silent +disable_message+C00373 -rcFile /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/verdi/elabcom.rc -partialdesign -q -logdir /home1/B110/KarthiKeyan/RISC_V/lint/vcst_rtdb/.internal/design/msrv32_decoder.exe.daidir/kdbresolverLog
+uname(Linux mavenserver-RH3 4.18.0-553.53.1.el8_10.x86_64 #1 SMP Fri May 9 17:36:31 EDT 2025 x86_64)
+au time 1.025298 0.004864 0.011621 delta 87187456 87187456 total 248938496 248938496

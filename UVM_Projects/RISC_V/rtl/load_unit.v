@@ -1,0 +1,79 @@
+module load_unit(ahb_resp_in,  ms_riscv32_mp_dmdata_in,
+	iadder_out_1_to_0_in,  load_unsigned_in,  load_size_in,
+	lu_output_out);
+
+input ahb_resp_in,  load_unsigned_in;
+input [31:0]ms_riscv32_mp_dmdata_in;
+input [1:0] iadder_out_1_to_0_in,  load_size_in;
+output reg [31:0]lu_output_out;
+always@(*)
+begin
+	if(!ahb_resp_in)
+	begin
+		case(load_size_in)
+			2'b00: begin
+						case(iadder_out_1_to_0_in)
+
+						2'b00:begin
+				
+							if(load_unsigned_in)
+								lu_output_out={8'b0,8'b0,8'b0,ms_riscv32_mp_dmdata_in[7:0]};
+							else
+								lu_output_out={{24{ms_riscv32_mp_dmdata_in[7]}},ms_riscv32_mp_dmdata_in[7:0]};
+								end
+					
+						2'b01: begin
+						if(load_unsigned_in)
+							lu_output_out={24'b0,ms_riscv32_mp_dmdata_in[15:8]};
+						else
+							lu_output_out={{24{ms_riscv32_mp_dmdata_in[15]}},ms_riscv32_mp_dmdata_in[15:8]};
+								end
+					
+						2'b10:begin
+						if(load_unsigned_in)
+							lu_output_out={24'b0,ms_riscv32_mp_dmdata_in[23:16]};
+						else
+							lu_output_out={{24{ms_riscv32_mp_dmdata_in[23]}},ms_riscv32_mp_dmdata_in[23:16]};
+								end
+					
+						default:begin
+						if(load_unsigned_in)
+							lu_output_out={24'b0,ms_riscv32_mp_dmdata_in[31:24]};
+						else
+							lu_output_out={{24{ms_riscv32_mp_dmdata_in[31]}},ms_riscv32_mp_dmdata_in[31:24]};
+								  end
+
+						endcase
+					end
+
+			2'b01:begin
+				if(iadder_out_1_to_0_in[1]==1'b0)
+					begin
+					if(load_unsigned_in)
+						lu_output_out={16'b0,ms_riscv32_mp_dmdata_in[15:0]};
+					else
+						lu_output_out={{16{ms_riscv32_mp_dmdata_in[15]}},ms_riscv32_mp_dmdata_in[15:0]};
+					end
+		
+				else
+					begin
+						if(load_unsigned_in)
+							lu_output_out={16'b0,ms_riscv32_mp_dmdata_in[31:16]};
+						else
+							lu_output_out={{16{ms_riscv32_mp_dmdata_in[31]}},ms_riscv32_mp_dmdata_in[31:16]};
+					end
+					end
+			2'b10:begin
+					lu_output_out=ms_riscv32_mp_dmdata_in;end
+			default:begin
+							lu_output_out={ms_riscv32_mp_dmdata_in};
+						end
+		
+		endcase
+end
+
+		else
+			lu_output_out=32'h00000000;
+	end
+
+endmodule
